@@ -104,7 +104,7 @@ function intToRoman(num) {
     if (num < 1 || num > 3999) return ('Number must be between 1 and 3999');
 
     const val = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
-    const syms = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"];
+    const syms = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
     let roman = '';
 
     for (let i = 0; i < val.length; i++) {
