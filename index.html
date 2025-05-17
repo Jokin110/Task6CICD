@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numeral Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Roman ↔ Number Converter</h1>
+        <div class="converter">
+            <select id="conversionType">
+                <option value="toRoman">Number to Roman</option>
+                <option value="toNumber">Roman to Number</option>
+            </select>
+            <input type="text" id="inputValue" placeholder="Enter value...">
+            <button onclick="convert()">Convert</button>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
