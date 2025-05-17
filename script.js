@@ -117,7 +117,8 @@ function intToRoman(num) {
 }
 
 function romanToInt(roman) {
-    if (!/^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/.test(roman))
+    roman = roman.toUpperCase();
+    if (!/^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/.test(roman) || roman == '')
         return ('Invalid Roman numeral');
 
     const romanMap = { I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000 };
