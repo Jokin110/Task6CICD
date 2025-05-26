@@ -107,7 +107,7 @@ function convert() {
 }
 
 function intToRoman(num) {
-    int originalNumValue = num;
+    var originalNumValue = num;
     if (!Number.isInteger(num)) return ('Please enter a valid integer');
     if (num < 1 || num > 3999) return ('Number must be between 1 and 3999');
 
