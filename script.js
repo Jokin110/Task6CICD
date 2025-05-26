@@ -1,3 +1,10 @@
+async src="https://www.googletagmanager.com/gtag/js?id=G-LC9M7J8YHR";
+
+window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LC9M7J8YHR');
+
 function createElementWithCleanup(element, className, duration) {
     element.className = className;
     document.body.appendChild(element);
