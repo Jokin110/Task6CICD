@@ -113,6 +113,12 @@ function intToRoman(num) {
             num -= val[i];
         }
     }
+
+    gtag('event', 'IntegerToRoman', {
+        'intValue': num,
+        'romanValue': roman
+    });
+    
     return roman;
 }
 
@@ -135,5 +141,11 @@ function romanToInt(roman) {
             num += current;
         }
     }
+
+    gtag('event', 'RomanToInteger', {
+        'intValue': num,
+        'romanValue': roman
+    });
+    
     return num;
 }
