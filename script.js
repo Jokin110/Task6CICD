@@ -14,6 +14,10 @@ function createElementWithCleanup(element, className, duration) {
 }
 
 function convert() {
+
+    gtag('event', 'ClicksOnConvert', {
+    });
+    
     // Clear previous elements
     document.querySelectorAll('.explosion, .car, .gasoline, .shockwave, .smoke').forEach(el => el.remove());
 
