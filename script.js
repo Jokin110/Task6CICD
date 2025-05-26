@@ -1,7 +1,5 @@
 window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-LC9M7J8YHR');
+function gtag(){dataLayer.push(arguments);}
 
 function createElementWithCleanup(element, className, duration) {
     element.className = className;
